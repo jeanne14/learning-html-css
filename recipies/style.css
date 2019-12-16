@@ -1,0 +1,50 @@
+body {
+    background-color: cornsilk;
+ }
+img {
+    border-radius: 10px;
+    width: 500px;
+    height: 400px;
+}
+h1 {
+    font-size: 40px;
+    margin-left: 20px;
+    color: #8B4513;
+    
+}
+h2 {
+    font-size: 30px;
+    border-bottom: 2px solid grey;
+    margin: 20px;
+    color: #A0522D;
+}
+
+li {
+    font-size: 20px
+   
+}
+a {
+    color:#D2691E;
+}
+a:hover {
+    color:chocolate;
+}
+
+.heading {
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 180px;
+}
+.dish {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+}
+.miniaturki {
+    height: 150px;
+    width: 196px;
+}
+.frame {
+    border: 2px solid brown;
+    text-align: center;
+    
+}
