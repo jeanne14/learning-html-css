@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<htlm>
+<html>
     <head>
         <link type="text/css" rel="stylesheet" href="./style.css">
     </head>
     <body style="width: 60%; margin: auto;">
-        <h1 class="heading">Breakfast</h1>
+        <header>
+            <nav class="backgroundgradient">
+                <ul>
+                    <li><a class="navlink" href="index.html">Home</a></li>
+                    <li><a class="navlink" href="breakfast.html">Breakfast</a></li>
+                    <li><a class="navlink" href=""></a>Dinner</li>
+                </ul>
+            </nav>
+            <h1 class="heading">Breakfast</h1>
+        </header>
         <div class="dish">
             <div class="frame">
                 <img id="radius" class="miniaturki" src="images/podplomyki.jpeg">
@@ -23,20 +32,22 @@
                 <img id="radius" class="miniaturki" src="images/sandwich.jpeg">
                 <a target="_blank" href="sandwich.html">Sandwich</a>
             </div>
-        
-        
+        </div>
+        <div style="width: 400px; height: 300px; border: 1px solid red">
+            <img id="karuzela" src="" style="width: 400px; height: 300px;" />
         </div>
         
-        
-       
-            
-            
-          
-            
-     
+        <script>
+            var i = 0;
+            var images = ["podplomyki", "asian_eggs", "pasta-_jajeczna"]
+            function go(){
+                i = (i+1)%3;
+                var img = document.getElementById("karuzela");
+                var obrazekZListy = images[i];
+                var pelnyObrazek = "images/" + obrazekZListy + ".jpeg";
+                img.src = pelnyObrazek;
+            }
+            setInterval(go, 2000);
+        </script>
     </body>
-
-
-
-
-</htlm>
+</html>

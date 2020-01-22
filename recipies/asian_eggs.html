@@ -2,22 +2,35 @@
 <html>
     <head>
         <link type="text/css" rel="stylesheet" href="./style.css">
+        
     </head>
     <body style="width: 60%; margin: auto;">
-        <div>
+        <header>
+            <nav class="backgroundgradient">
+                <ul>
+                    <li><a class="navlink" href="index.html">Home</a></li>
+                    <li><a class="navlink" href="breakfast.html">Breakfast</a></li>
+                    <li><a class="navlink" href=""></a>Dinner</li>
+                </ul>
+            </nav>
+            
             <h1>Jajka sadzone po azjatycku</h1>
             <img src="images/asian_eggs.jpeg" alt="Asian Eggs Photo">
+            
+        </header>
+        <aside class = "ingredients">
             <h2>Ingredients:</h2>
             <ul>
-                <li>2 dymki</li>
-                <li>1 papryczka chili</li>
-                <li>2 czubate łyżki mieszanki białego i czarnego sezamu</li>
-                <li>4 duże jajka</li>
-                <li>2 łyżki sosu hoisin</li>
+                <li><input type="checkbox"/>2 dymki</li>
+                <li><input type="checkbox"/>1 papryczka chili</li>
+                <li><input type="checkbox"/>2 czubate łyżki mieszanki białego i czarnego sezamu</li>
+                <li><input type="checkbox"/>4 duże jajka</li>
+                <li><input type="checkbox"/>2 łyżki sosu hoisin</li>
             </ul>
-        </div>
+            <button id= "save">WYSLIJ NA E-MAIL</button>
+        </aside>
    
-        <div>
+        <div class = "recipe">
             <h2>Recipe:</h2>
             <ol>
                 <li>Przytnij dymki oraz chili i pokrój je w cienkie ukośne plasterki.</li>
@@ -28,6 +41,8 @@
                 <li>Skrop całość sosem hoisin (można rozrzedzić wodą).</li>
                 <li>Posyp jajka odcedzoną dymką i chili. Nakłuj żółtka. </li>
             </ol>
+            <button id= "print">ZAPISZ PDF</button>
+            <button id= "print">WYDRUKUJ</button>
         </div>   
     </body>
     

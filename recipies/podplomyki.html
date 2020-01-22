@@ -4,21 +4,73 @@
         <link type="text/css" rel="stylesheet" href="./style.css">
     </head>
     <body style="width: 60%; margin: auto;">
-        <div>
+        <header>
+            <nav class="backgroundgradient">
+                <ul>
+                    <li><a class="navlink" href="index.html">Home</a></li>
+                    <li><a class="navlink" href="breakfast.html">Breakfast</a></li>
+                    <li><a class="navlink" href=""></a>Dinner</li>
+                </ul>
+            </nav>
+   
             <h1>Podpłomyki z jajkiem i mangowym chutney</h1>
             <img src="images/podplomyki.jpeg" alt="Podplomyki Photo">
+        </header>
+        <aside class = "ingredients">
             <h2>Ingredients:</h2>
             <ul>
-                <li>4 duże jajka</li>
-                <li>100g mąki samorosnącej</li>
-                <li>6 czubatych łyżek jogurtu naturalnego</li>
-                <li>2 łyżki chutney mangowego</li>
-                <li>1 czerwona papryczka chili</li>
+                <li><input type="checkbox"/>4 duże jajka</li>
+                <li><input type="checkbox"/>100g mąki samorosnącej</li>
+                <li><input type="checkbox"/>6 czubatych łyżek jogurtu naturalnego</li>
+                <li><input type="checkbox"/>2 łyżki chutney mangowego</li>
+                <li><input type="checkbox"/>1 czerwona papryczka chili</li>
             </ul>
-        </div>
-   
-        <div>
-            <h2>Recipe:</h2>
+            <input type="email" name = "useremail" id="useremail"/> 
+            <button id= "save">WYSLIJ NA E-MAIL</button>
+            
+            
+            <script>
+                //podpinam kliknięcie button 'save' to funkcji 'wyślij'
+                let sendButton = document.getElementById("save")
+                sendButton.addEventListener("click", prepAndSend);
+                
+                function prepAndSend (){
+                    let address = document.getElementById("useremail");
+                    console.log(address.value);
+                    let inputEmail = address.value;
+                    SendEmailOnTheServer(inputEmail, "Z pierwszej strony Asi", "Lista potrzebnych składników do przygotowania potrawy.")
+                    
+                    
+                };
+                
+                
+                // Funkcja wysylajaca email na serwer. Na razie zamiast wysylac, pokazuje tylko 
+                // co chcemy wyslac
+                function SendEmailOnTheServer(to, title, contents){
+                    alert("Wyslalibysmy email do: " + to + " o tytule '" + title + "' i tresci: '" + contents + "'");
+                }
+                
+                // Napisac tu kod, ktory wykona sie tuz po zaladowaniu strony,
+                // i powie przegladarce na serwer, zeby dala nam znac, jak ktos kliknie
+                // na E-MAIL
+                
+                // 1. Znajdzmy p
+                
+                // let buttonemail
+            </script>
+            
+            
+            
+            
+            
+            
+            
+        </aside>
+        
+            <a href="mailto:me@me.com">email me here!</a>
+
+        <div class = "recipe">
+        <h2>Recipe:</h2>
             <ol>
                 <li>Gotuj jajka przez 5.5 minut w bulgoczącej wodzie (na miękko).</li>
                 <li>W misce wymieszaj mąkę ze szczyptą soli morskiej, 4 łyżkami jogurtu i 1 łyżką oliwy.</li>
@@ -28,6 +80,8 @@
                 <li>Przekrój jajka i ułóż je na wierzchu (możesz rozgnieść je widelcem).</li>
                 <li>Pokrój chili w plasterki i posyp całość dowolną ilością. Skrop całość oliwą i oprósz solą morską i czarnym pieprzem.</li>
             </ol>
+            <button id= "print">ZAPISZ PDF</button>
+            <button id= "print">WYDRUKUJ</button>
         </div>   
     </body>
     

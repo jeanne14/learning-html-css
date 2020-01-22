@@ -15,6 +15,7 @@
 }
 .site li h1 {
     text-align: center;
+    padding: 48px;
 }
 
 
@@ -48,6 +49,8 @@ li {
 
 ul li{
     margin: 15px 0 15px 0;
+    list-style-type: none;
+    
 }
 ol li{
     padding: 10px;
@@ -57,6 +60,23 @@ a {
 }
 a:hover {
     color:chocolate;
+}
+
+nav {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    padding-left: 5px;
+}
+
+nav ul {
+        list-style: none;
+        padding: 0px;
+    }
+
+nav ul li{
+    display: inline-block;
 }
 
 .heading {
@@ -74,10 +94,48 @@ a:hover {
     width: 176px;
 }
 .frame {
-    border: 2px solid brown;
+    border: 0px solid brown;
     text-align: center;  
     margin: 10px;
 }
+.backgroundgradient {
+    background: #603813;
+    display: block;
+    text-align: center;
+    padding: 16px;
+}
+
+.navlink {
+    float: left
+    height: 35px;
+    margin-right: 10px;
+    font-size:18px;
+    padding-top: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+.ingredients {
+    border: 1px solid black;
+    float: left;
+    width: 350px;
+    
+}
+
+.recipe {
+    float: left;
+}
+
 #radius{
     border-radius: 0;
+}
+
+#print {
+    margin: 20px 10px 20px 10px;
+    color: white;
+    background-color: #8B4513;
+}
+#save {
+    color: white;
+    background-color: #8B4513;
 }

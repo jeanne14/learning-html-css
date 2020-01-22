@@ -4,20 +4,32 @@
         <link type="text/css" rel="stylesheet" href="./style.css">
     </head>
     <body style="width: 60%; margin: auto;">
-        <div>
+        <header>
+            <nav class="backgroundgradient">
+                <ul>
+                    <li><a class="navlink" href="index.html">Home</a></li>
+                    <li><a class="navlink" href="breakfast.html">Breakfast</a></li>
+                    <li><a class="navlink" href=""></a>Dinner</li>
+                </ul>
+            </nav>
             <h1>Pasta jajeczna z rzodkiewką</h1>
             <img src="images/pasta-_jajeczna.jpeg" alt="Pasta Jajeczna Photo">
+        
+        </header>
+        <aside class = "ingredients">
+            
             <h2>Ingredients:</h2>
             <ul>
-                <li>4 duże jajka</li>
-                <li>1 pęczek rzodkiewek</li>
-                <li>1 pęczek szczypiorku</li>
-                <li>3 łyżki majonezu</li>
-                <li>sól, pieprz</li>
+                <li><input type="checkbox"/>4 duże jajka</li>
+                <li><input type="checkbox"/>1 pęczek rzodkiewek</li>
+                <li><input type="checkbox"/>1 pęczek szczypiorku</li>
+                <li><input type="checkbox"/>3 łyżki majonezu</li>
+                <li><input type="checkbox"/>sól, pieprz</li>
             </ul>
-        </div>
+            <button id= "save">WYSLIJ NA E-MAIL</button>
+        </aside>
    
-        <div>
+        <div class = "recipe">
             <h2>Recipe:</h2>
             <ol>
                 <li>Gotuj jajka w bulgoczącej wodzie (na twardo).</li>
@@ -28,6 +40,8 @@
                 <li>Dodaj majonez i wymieszaj.</li>
                 <li>Dopraw do smaku solą i pieprzem.</li>
             </ol>
+            <button id= "print">ZAPISZ PDF</button>
+            <button id= "print">WYDRUKUJ</button>
         </div>   
     </body>
     
